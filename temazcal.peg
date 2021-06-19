@@ -1,0 +1,13 @@
+##JSoLang tlaiixkopioolin
+
+main = x:allRules* { return "##CineCer0\n" + x.join("") }
+allRules = mov1 / mov2 / mov3 / mov4 / anyCharacter
+anyCharacter = .
+
+mov1 = "1"i { return "size 4 $ setPosY (range 0.89 0.9 $ sin 100) $ setPosX (-0.5) $ text \"Temazcal is a music piece by Javier Alvarez for a maraca soloist and electronic sounds\"; size 5 $ hsva 1 1 1 (ramp 8 0 1) $ setPosX (ramp 5 0.7 0) $ setPosY 0.5 $  text \"Date: 1984 Location: London, Institute of Contemporary Arts. Original Performer: Luis Julio Toro\"" }
+
+mov2 = "2"i { return "size 4 $ setPosY (range 0.89 0.9 $ sin 1) $ setPosX (-0.67) $ text \"Temazcal\"; size 3 $ setPosY (-0.4) $ text \"Premiered in 1984 and winning an honour mention in the Concours international de composition de Bourges (France) in 1988 has become ever since an iconic work of mixed electroacoustic music\""}
+
+mov3 = "3"i { return "size 3 $ hsva 1 1 1 (ramp 2 1 0) $ setPosY (-0.4) $ text \"Premiered in 1984 and winning an honour mention in the Concours international de composition de Bourges (France) in 1988 has become ever since an iconic work of mixed electroacoustic music\"; size 4 $ setPosY (range 0.8 0.9 $ sin 1) $ setPosX (-0.67) $ text \"Temazcal\"; size 6 $ hsva 1 1 1 (ramp 1 0 1) $ setCoord 0.5 (range (0.2) (-0.3) $ sin 0.04) $ text \"Performed regularly, the work perhaps is one of the most well known pieces of music for percussion with electronic sounds ever made in the electroacoustic tradition by a Mexican composer\""}
+
+mov4 = "4"i { return "setPosY (ramp 8 0.2 0.5) $ text \"A temazcal is the name, given by Nahua speakers\"; setPosY (ramp 8 0.15 0.4) $ text \"to a steam house in which ritual and medicinal ceremonies take place\"; quant 4 0 $ setPosY (ramp 2 0.1 0.8) $ text \"Often rituals that have to do with birth and pregnancy are associated with the temazcalli\""}
