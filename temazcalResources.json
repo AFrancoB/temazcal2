@@ -1,4 +1,5 @@
 [
+{ "url":"samples-maracas_afb/kickDoor.wav","type":"audio","bank":"marakick","n":0},
 { "url":"samples-maracas_afb/st-00.wav","type":"audio","bank":"maracas","n":0},
 { "url":"samples-maracas_afb/st-01.wav","type":"audio","bank":"maracas","n":1},
 { "url":"samples-maracas_afb/st-02.wav","type":"audio","bank":"maracas","n":2},
