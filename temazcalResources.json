@@ -67,5 +67,5 @@
 { "url":"samples-maracas_afb/stf-21.wav","type":"audio","bank":"maracasf","n":21},
 
 
-{ "url":"videosMaracas/temazcal_flow-1.mp4","type":"video","bank":"maracaFlow","n":0}
+{ "url":"videos-maracas_afb/temazcal_flow-1.mp4","type":"video","bank":"maracaFlow","n":0}
 ]
