@@ -1,0 +1,20 @@
+snippets temazcal
+
+opacity (ramp 2 0 1) $ blur (ramp 9 20 1) $ setRotate 345 $ setCoord (ramp 20 (0.2) (0.6)) (ramp 20 (-9.1) (-8.1)) $ size 10.75 $ image "glifos.svg";
+
+
+
+x << 1 + (lo*0.05);
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "glifo1.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "glifo2.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "glifo3.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "glifo4.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "glifo5.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "glifo6.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "glifo7.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "glifo8.svg" >> video;
+spin (saw 0.1) $ img "glifoOzomatli.svg" * sin [0.13,0.21,0.32] >> video;
+spin (saw 0.1*(-1)) $ img "glifos.svg" * sin [0.13,0.21,0.32] >> video;
+saw  [0.1,0.2,0.3] >> fdbk
+
+
