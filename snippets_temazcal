@@ -18,3 +18,15 @@ spin (saw 0.1*(-1)) $ img "glifos.svg" * sin [0.13,0.21,0.32] >> video;
 saw  [0.1,0.2,0.3] >> fdbk
 
 
+--- primer programa de punctual q sirve en la red!!!
+spin (saw 0.1) $ img "https://afrancob.github.io/temazcal2/scriptProcess/glifoOzomatli.svg" >> video;
+0.85 >> fdbk  
+
+-- maracas perronas
+
+every 3 (stut 15 0.5 (1/15)) $ every 2 (jux $ slow 1.5 . rev) $ s "maracasf(12,12)" # n (irand 16) # gain "1.5 1 1 1.3 1 1 1.5 1 1 1.3 1 1" # speed "0.5 0.1 0.2"
+
+-- momento 1
+opacity 0.5 $ blur (range 1 5 $ sin 0.1) $ setCoord 0.5 0.5 $ size 0.25 $  vol 1 $ video "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/VID20220331060810.mp4?raw=true";
+opacity 0.5 $ blur (range 1 5 $ sin 0.2) $ setCoord 0 0.5 $size 0.25 $ vol 2 $ "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/VID20220331060836.mp4?raw=true";
+opacity 0.5 $ blur (range 1 5 $ sin 0.3) $ vol 1 $ setCoord (-0.5) 0.5 $ size 0.25 $ "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/VID20220331060912.mp4?raw=true"
