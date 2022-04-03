@@ -64,6 +64,13 @@
 { "url":"samples-maracas_afb/stf-18BUENAZO.wav","type":"audio","bank":"maracasf","n":18},
 { "url":"samples-maracas_afb/stf-19.wav","type":"audio","bank":"maracasf","n":19},
 { "url":"samples-maracas_afb/stf-20.wav","type":"audio","bank":"maracasf","n":20},
+<<<<<<< HEAD
 { "url":"samples-maracas_afb/stf-21.wav","type":"audio","bank":"maracasf","n":21}
 
+=======
+{ "url":"samples-maracas_afb/stf-21.wav","type":"audio","bank":"maracasf","n":21},
+
+
+{ "url":"videos-maracas_afb/temazcal_flow-1.mp4","type":"video","bank":"maracaFlow","n":0}
+>>>>>>> e92cfbfa444a37190d273c7d2b2b346f68d6f574
 ]
