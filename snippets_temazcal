@@ -26,7 +26,95 @@ spin (saw 0.1) $ img "https://afrancob.github.io/temazcal2/scriptProcess/glifoOz
 
 every 3 (stut 15 0.5 (1/15)) $ every 2 (jux $ slow 1.5 . rev) $ s "maracasf(12,12)" # n (irand 16) # gain "1.5 1 1 1.3 1 1 1.5 1 1 1.3 1 1" # speed "0.5 0.1 0.2"
 
--- momento 1
+ every 12 (stut 15 0.5 (1/15)) $ every 2 (jux $ slow 1.5 . rev) $ s "[maracasf(12,12), maracasd(5,12,8), {~ ~ ~ ~ ~ maracasp ~}%12]" # n (irand 16) # gain "1.5 1 1 1.3 1 1 1.5 1 1 1.3 1 1" # speed "1"
+ 
+ slow 2 $ every 24 (stut 4 0.5 (1/5)) $ every 2 (jux $ slow 0.75 . rev) $ s "[maracasf(12,12), maracasd(<3 4 5 4 3 2 6>,12,<8 4 12 0>), {maracas*2 ~ ~ ~ ~ maracasp ~}%12]" # n (irand 21) # gain "1.5 1 1 1.3 1 1 1.5 1 1 1.3 1 1" # speed "0.95 2 1 2 2 1 0.95 2 1 1 2 2"
+ 
+ jux (stut 2 0.5 (1/16)) $ every 2 (jux $ slow 3 . rev) $ s "[maracasf(16,16), maracasd(< 3 4 5>,8,<1 3 2 0 1>), {maracas*2 ~ ~ ~ ~ maracasp ~}%32]" # n (irand 21) # gain "1.5 1 1 1 1.3 1 1 1 1.5 1 1 1 1.3 1 1 1 " # speed "{1 2 2 1 2}%8"
+
+-- momento1 alejandro
+opacity (ramps [20,5] [1,1,0]) $ blur (ramp 10 30 1) $ setRotate (ramp 20 360 355) $ setCoord (ramp 20 (-1) (-0.3)) (ramp 20 (-3.5) (-3.35)) $ size 4.85 $ image "https://afrancob.github.io/temazcal2/script-afb/i.svg?raw=true";
+
+spin (0~~0.1 $ sin 0.03) $ move [-2.5,-11.3] $ zoom (14~~13.94 $ sin 7) $ img "https://afrancob.github.io/temazcal2/script-afb/i.svg" * (0.4) >> video;
+0.95 >> fdbk
+
+-- momento 1 rolando
 opacity 0.5 $ blur (range 1 5 $ sin 0.1) $ setCoord 0.5 0.5 $ size 0.25 $  vol 1 $ video "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/VID20220331060810.mp4?raw=true";
 opacity 0.5 $ blur (range 1 5 $ sin 0.2) $ setCoord 0 0.5 $size 0.25 $ vol 2 $ "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/VID20220331060836.mp4?raw=true";
 opacity 0.5 $ blur (range 1 5 $ sin 0.3) $ vol 1 $ setCoord (-0.5) 0.5 $ size 0.25 $ "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/VID20220331060912.mp4?raw=true"
+
+
+
+-- momento 2 alejandro
+move [((-6)~~(-6.1) $ sin 0.05),((-2)~~(-1.9) $ sin 0.055)] $ zoom (7.97~~8 $ sin 0.2) $ img "https://afrancob.github.io/temazcal2/script-afb/ii.svg" >> video;
+0.85 >> fdbk
+
+opacity (ramps [20,5] [1,1,0]) $ blur (ramp 10 30 1) $ setRotate (ramp 30 291 287) $ setCoord (0.1) (ramp 10 (-4.5) (-3.8)) $ size 5 $ image "https://afrancob.github.io/temazcal2/script-afb/ii.svg?raw=true";
+
+
+--  momento 3 alejandro
+spin (saw 0.02) $ move [-3,0.75] $ zoom 4 $ img "https://afrancob.github.io/temazcal2/script-afb/iii.svg" >> video;
+0.95 >> fdbk
+
+opacity (ramp 30 1.5 0) $ blur (ramps [5,5,10,5] [20,1,1,3]) $ setCoord (0) (ramp 10 (-5) (-4)) $ size 5 $ setRotate 247 $ image "https://afrancob.github.io/temazcal2/script-afb/iii.svg?raw=true";
+
+-- momento 4
+spin (saw (cps/64)) $ move [-2,3.5] $ zoom (5~~5.1 $ sin (cps)) $ img "https://afrancob.github.io/temazcal2/script-afb/iv.svg" >> video;
+[0.9] >> fdbk
+
+
+-- maracas patrones basicos por momentos
+
+13
+every 2 (jux $ slow 3 . rev) $ s "maracasf*13" # n (irand 21) # gain "1.5 1 1 1.3 1 1 1.5 1 1 1.3 1 1" # speed "1"
+12
+ every 12 (stut 15 0.5 (1/15)) $ every 2 (jux $ slow 1.5 . rev) $ s "[maracasf(12,12), maracasd(5,12,8), {~ ~ ~ ~ ~ maracasp ~}%12]" # n (irand 16) # gain "1.5 1 1 1.3 1 1 1.5 1 1 1.3 1 1" # speed "1"
+11
+
+10
+
+9
+
+8
+jux (stut 2 0.5 (1/16)) $ every 2 (jux $ slow 3 . rev) $ s "[maracasf(16,16), maracasd(< 3 4 5>,8,<1 3 2 0 1>), {maracas*2 ~ ~ ~ ~ maracasp ~}%32]" # n (irand 21) # gain "1.5 1 1 1 1.3 1 1 1 1.5 1 1 1 1.3 1 1 1 " # speed "{1 2 2 1 2}%8"
+7
+
+6
+slow 2 $ every 24 (stut 4 0.5 (1/5)) $ every 2 (jux $ slow 0.75 . rev) $ s "[maracasf(12,12), maracasd(<3 4 5 4 3 2 6>,12,<8 4 12 0>), {maracas*2 ~ ~ ~ ~ maracasp ~}%12]" # n (irand 21) # gain "1.5 1 1 1.3 1 1 1.5 1 1 1.3 1 1" # speed "0.95 2 1 2 2 1 0.95 2 1 1 2 2"
+5
+
+4
+
+3
+
+2
+
+1
+
+
+
+
+--------------------momento uno pleno
+opacity 0.9 $ blur (range 1 5 $ sin 0.1) $ setCoord 0.6 0.5 $ size 0.3 $  vol 1 $ video "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/amanecer-1.mp4?raw=true";
+opacity 0.9 $ blur (range 1 5 $ sin 0.2) $ setCoord 0 0.5 $size 0.3 $ vol 2 $ "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/amanecer-2.mp4?raw=true";
+opacity 0.9 $ blur (range 1 5 $ sin 0.3) $ vol 1 $ setCoord (-0.6) 0.5 $ size 0.3 $ "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/amanecer-3.mp4?raw=true";
+opacity 0.9 $ blur (range 1 5 $ sin 0.2) $ setCoord (0.33) (-0.5) $size 0.3 $ vol 2 $ "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/amanecer-4.mp4?raw=true";
+opacity 0.9 $ blur (range 1 5 $ sin 0.3) $ vol 1 $ setCoord (-0.33) (-0.5) $ size 0.3 $ "https://github.com/AFrancoB/temazcal2/blob/main/Momento1/amanecer-5.mp4?raw=true"
+
+x << 1 + (lo*0.05);
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/i.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/ii.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/iii.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/iv.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/v.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/vi.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/vii.svg" >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/viii.svg" >> video;
+spin (saw 0.02) $ img "https://afrancob.github.io/temazcal2/script-afb/ozomatli.svg"  >> video;
+spin ((saw 0.02)*(-1)) $ img "https://afrancob.github.io/temazcal2/script-afb/octante.svg"  >> video;
+0.9 >> fdbk
+
+
+
+
+
