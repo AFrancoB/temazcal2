@@ -1,0 +1,12 @@
+ch << step [45, 53, 62, 77] $ lfsaw [1,2,3,4];
+lpf (100~~2666 $ sin [0.01,0.015]) 1 $ saw (midicps ch) *(-18)db >> audio <> 10; 
+tri (midicps [38.01,26]) *(-18)db >> audio <> 10;
+
+i << img "https://afrancob.github.io/temazcal2/Momento-3/antiguo-temazcal.jpg";
+i * blend [0.1,ebeat*0.01,0.1,mid*0.85] >> video
+
+every 5 (# vowel "<a e i o u a e>") $ every 3 (#hcutoff "1200 1000 2666") $ jux (palindrome) $ s "{maracasf ~ ~, maracas ~, ~ ~ ~ ~ ~ ~ ~ maracasd, ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ maracasp}%11" # gain "{1.5 1 1 1.6 1}%11" # n (irand 21) # speed "{1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.5}%11" |+| gain 0.3
+
+vol 0.5 $ setCoord (0.5) (-0.3) $ opacity 0.78 $ size 0.35 $ video "https://github.com/AFrancoB/temazcal2/blob/main/Momento-3/antiguo-temazcal-1.mp4?raw=true"; -- sequence 5 -> 3 -> 2 -> 1 -> 4
+
+opacity (ramp 30 1.5 0) $ blur (ramps [5,5,10,5] [20,1,1,3]) $ setCoord (0) (ramp 10 (-5) (-4)) $ size 5 $ setRotate 247 $ image "https://afrancob.github.io/temazcal2/script-afb/iii.svg?raw=true";

@@ -1,0 +1,20 @@
+size << 0.95;
+u << zoom size $ img  "https://afrancob.github.io/temazcal2/Momento-11/foto-6.jpg";
+v << zoom size $ img  "https://afrancob.github.io/temazcal2/Momento-11/foto-5.jpg";
+w << zoom size $ img  "https://afrancob.github.io/temazcal2/Momento-11/foto-1.jpg";
+x << zoom size $ img  "https://afrancob.github.io/temazcal2/Momento-11/foto-2.jpg";
+y << zoom size $ img  "https://afrancob.github.io/temazcal2/Momento-11/foto-3.jpg";
+z << zoom size $ img  "https://afrancob.github.io/temazcal2/Momento-11/foto-4.jpg";
+n << step [0,1,2,3,4,5] $ lfsaw [cps/6];
+
+zoom (0.5+(ebeat*0.05)) $ spin ((1/ebeat) + (etime*0.05)) $ tile [4,4] $ ((n==0)*u)+:((n==1)*v)+:((n==2)*w)+:((n==3)*x)+:((n==4)*y)+:((n==5)*z) >> video;
+
+(1/ebeat)*0.125 >> fdbk;
+
+s "maracasf maracasp <maracas maracasd>" # n (irand 21) # gain "1.5 1 0.9"
+
+vol 0.5 $ opacity 0.8 $ size 0.5 $ video "https://github.com/AFrancoB/temazcal2/blob/main/Momento-11/foto-1.mp4?raw=true";
+
+font "Arial" $ text "The hegemonic narration of the Mexican state allows us to speculate on a fictional link between old indigenous temporal conceptions and Alvarez’s research on cognition, gesture, time and movement.";
+setPosY (-0.25) $ font "Arial" $ text "In this way, Alvarez apropiates, assimilates, supplants and re-tells forms of knowledge developed by a community in which he does not participate nor belong.";
+setPosY (-0.5) $ font "Arial" $ text "This pattern has been observed before: a nostalgic re-telling of an idealised past followed by a future envisioned as an identical repetition of such ideal past. "

@@ -1,0 +1,12 @@
+rgba 1 1 1 (ramp 5 0 1) $ font "Arial" $ setPosY 0.85 $ text "Temazcal's score is a commodity that can be purchased on the composer's website: https://temazcal.co.uk/store/";
+rgba 1 1 1 (ramp 8 0 1) $ size (range 1 5 $ sin 0.1) $ font "Arial" $ setPosY 0.5 $ text "Only 55 USD.";
+rgba 1 1 1 (ramp 15 0 1) $ font "Arial" $ setPosY 0.78 $ text "Alvarez has built a career and a reputation feeding from the prestige of his English education as well as the mysticism of his Mexican identity. Simultaneously, broadening the scope of the colonial European project and advancing a Mexican modernity in which indigenous people are a relic of the past. "
+
+setCoord 0.3 (-0.3) $ vol 0.8 $ opacity 0.8 $ size 0.5 $ video "https://github.com/AFrancoB/temazcal2/blob/main/Momento-12/hierbas-4.mp4?raw=true";
+
+s "maracasd maracas" # speed "1" # gain "1.5 1" # n (irand 10)
+
+v << vid "https://afrancob.github.io/temazcal2/Momento-12/hierbas-1.mov";
+(move [(0~~0.23 $ sin 0.002),(0~~0.25 $ sin 0.0025)] $ zoom (1.25~~10 $ sin 0.05) $ v) * (1) >> video;
+v * hline ((fft fx)-0.75) 0.2 >> video;
+v * vline ((fft fy)-0.5) 0.2 >> video;

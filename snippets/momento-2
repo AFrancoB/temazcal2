@@ -1,0 +1,14 @@
+x << step [0,0.25,0.5,0.25,0,-0.25,-0.5,-0.25] $ lfsaw (cps/4); 
+y << step [0.65,0.5,0,-0.5,-0.65,-0.5,0,0.5] $ lfsaw (cps/4);
+i << img "https://afrancob.github.io/temazcal2/Momento-2/retrato-6.jpg";
+bckg << img "https://afrancob.github.io/temazcal2/Momento-2/retrato-6.jpg";
+
+(move [0.086, (-0.5)] $ zoom 1.7 $ i)* circle [(sin 0.1)*0.05,0] ((fract $ ebeat)*(mid*1.3))>> video;
+(move [0.086, (-0.5)] $ zoom 1.7 $ i)* rect (x++y) [0.5,0.5] >> video;
+
+spin (saw 0.001) $zoom (0.1~~12 $ sin (cps/16)) $  tile (abs ebeat ++ abs ebeat) $ bckg *(blend [sin 0.15,sin 0.1,sin 0.3,sin 0.5]) *(-6)db >> video;
+
+
+ every 12 (stut 15 0.5 (1/15)) $ every 2 (jux $ slow 1.5 . rev) $ s "[maracasf(12,12), maracasd(5,12,8), {~ ~ ~ ~ ~ maracasp ~}%12]" # n (irand 16) # gain "1.5 1 1 1.3 1 1 1.5 1 1 1.3 1 1" # speed "1"
+ 
+ blur (ramps [15,5] [0,0,10]) $ setPosX (ramp 10 0.7 (-0.1)) $ setRotate (ramp 5 10 25) $ setCoord (-0.31) (0.5) $ size 1.5 $ image "https://afrancob.github.io/temazcal2/script-afb/const1-2.svg?raw=true";

@@ -1,0 +1,12 @@
+##JSoLang tlaiixkopioolin
+
+main = x:allRules* { return "##CineCer0\n" + x.join("") }
+allRules = v1 / v2 / v3 / v4 / v5 / anyCharacter
+anyCharacter = .
+
+v1 = "amanecer."i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-1.mp4?raw=true;\"" }
+v2 = "amanecer:"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-2.mp4?raw=true;\"" }
+v3 = "amanecer,:"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-3.mp4?raw=true;\"" }
+v4 = "amanecer;:"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-4.mp4?raw=true;\"" }
+v5 = "amanecer|"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-5.mp4?raw=true;\"" }
+
