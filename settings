@@ -1,0 +1,33 @@
+settings:
+
+!setbpm 150  -- cambio de tempo en la ultima escena: !setbpm 100
+
+
+
+
+-- todos deben de ver stopwatch 2666
+
+--Performer 1
+grid 2 2 [[label 20,code 21 0],[label 22,code 23],[label 24,code 25 0],[sandClock 26,countDown 27,stopwatch 2666]] 
+-- performer 2
+grid 2 2 [[label 30,code 31 0],[label 32,code 33],[label 34,code 35 0],[sandClock 36,countDown 37,stopwatch 2666]] 
+-- performer 3
+grid 2 2 [[label 40,code 41 0],[label 42,code 43],[label 44,code 45 0],[sandClock 46,countDown 47,stopwatch 2666]] 
+
+
+-- vista publica 1
+grid 3 2 [[label 20,code 21 0],[label 30,code 31 0],[label 40,code 41 0],[label 24,code 25 0],[label 34,code 35 0],[label 44,code 45 0]]
+
+
+
+
+zones: 100 - 111 son labels (pares) y cajas de codigo (nones). Aqui se reprograman los nanolenguajes 
+ - 101 ##kakilistli  (guion de rolando)
+ - 103 ##iixkopinomej (imagenes)
+ - 105 ##tlaiixcopiolin (videos)
+ - 107 ##ce
+ - 109 ##ome
+ - 111 ##yei...
+
+modify nano-langs:
+grid 6 1 [[label 100,code 101 0],[label 102,code 103 0],[label 104,code 105 0],[label 106,code 107 0],[label 108,code 109 0],[label 110,code 111 0]]

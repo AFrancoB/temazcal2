@@ -1,0 +1,8 @@
+##JSoLang iixkopinomej
+
+main = x:allRules* { return "##CineCer0\n" + x.join("") }
+allRules = f1 / anyCharacter
+anyCharacter = .
+
+f1 = "amanecer"i { return "image \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer.jpg?raw=true\"" }
+

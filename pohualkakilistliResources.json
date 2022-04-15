@@ -1,0 +1,23 @@
+[
+{ "url":"Momento-1/guion-r.mp3", "type":"audio","bank":"rolando","n":0},
+{ "url":"Momento-1/flor.mp3", "type":"audio","bank":"flor","n":0},
+{ "url":"Momento-1/rita.mp3", "type":"audio","bank":"rita","n":0},
+{ "url":"Momento-2/clara-1.mp3", "type":"audio","bank":"clara","n":0},
+{ "url":"Momento-2/clara-2.mp3", "type":"audio","bank":"rolando","n":1},
+{ "url":"Momento-2/flor-1.mp3", "type":"audio","bank":"flor","n":1},
+{ "url":"Momento-2/flor-2.mp3", "type":"audio","bank":"flor","n":2},
+{ "url":"Momento-2/ramon-1.mp3", "type":"audio","bank":"ramon","n":0},
+{ "url":"Momento-2/rita-2.mp3", "type":"audio","bank":"rolando","n":1},
+{ "url":"Momento-3/clara-1.mp3", "type":"audio","bank":"clara","n":1},
+{ "url":"Momento-3/flor-1.mp3", "type":"audio","bank":"flor","n":3},
+{ "url":"Momento-5/clara-1.mp3", "type":"audio","bank":"clara","n":2},
+{ "url":"Momento-5/flor-1.mp3", "type":"audio","bank":"flor","n":4},
+{ "url":"Momento-5/tino-1.mp3", "type":"audio","bank":"tino","n":1},
+{ "url":"Momento-11/guion-r-4.mp3", "type":"audio","bank":"rolando","n":1},
+{ "url":"Momento-12/guion-r-3.mp3", "type":"audio","bank":"rolando","n":2},
+{ "url":"Momento-12/clara-1.mp3", "type":"audio","bank":"clara","n":3},
+{ "url":"Momento-12/flor-1.mp3", "type":"audio","bank":"flor","n":5},
+{ "url":"Momento-12/flor-2.mp3", "type":"audio","bank":"flor","n":6},
+{ "url":"Momento-12/guion-r-5.mp3", "type":"audio","bank":"rolando","n":3},
+{ "url":"Momento-13/ramon.mp3", "type":"audio","bank":"ramon","n":1}
+]
