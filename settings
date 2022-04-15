@@ -1,5 +1,11 @@
 settings:
 
+
+!reslist "https://afrancob.github.io/temazcal2/temazcalResources.json"
+
+!reslist "https://afrancob.github.io/temazcal2/pohualkakilistliResources.json"
+
+
 !setbpm 150  -- cambio de tempo en la ultima escena: !setbpm 100
 
 
