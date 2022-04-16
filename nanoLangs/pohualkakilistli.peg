@@ -1,0 +1,9 @@
+##JSoLang pohualkakilistli
+
+main = x:allRules* { return "##TimeNot\n" + x.join("") }
+allRules = t1 / anyCharacter
+anyCharacter = .
+
+t1 = "rolando-1"i { return "|: 1800s :| x s: rolando n:[0]<0>, amp:[1 0 0 0 0 0 0 0 0 0]<0>" }
+
+
