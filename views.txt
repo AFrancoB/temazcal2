@@ -1,0 +1,58 @@
+######## vista publica 1  donde desplegamos el codigo
+
+grid 3 1
+[
+    [[code 0 0],[code 2 0],[code 4 0]],
+    [code 6 0],
+    [[code 12 0],[code 14 0]]
+]
+
+######## vista publica 2  donde desplegamos el status del ensamble
+
+grid 2 2
+[
+    [load 0],
+    [iframe "rostro rolando", iframe "publico en mx"],
+    [[iframe "rostro diego", timeVision 60],
+    [iframe "rostro alex", sandClock 61]
+]
+
+######## vista publica 3  donde solo se ven los visuales
+
+grid 2 2 []
+
+######## Rolando
+
+grid 2 3 
+[
+	[code 2 0],
+	[[snippet 2 "pohualkakilistli" "rolando1"],[snippet 2 "pohualkakilistli" "rolando2"],[snippet 2 "pohualkakilistli" "rolando3"],[snippet 2 "pohualkakilistli" "rolando4"],[snippet 2 "pohualkakilistli" "clara1"],[snippet 2 "pohualkakilistli" "clara2"],[snippet 2 "pohualkakilistli" "clara3"],[snippet 2 "pohualkakilistli" "clara4"],[snippet 2 "pohualkakilistli" "clara5"],[snippet 2 "pohualkakilistli" "flor1"],[snippet 2 "pohualkakilistli" "flor2"],[snippet 2 "pohualkakilistli" "flor3"],[snippet 2 "pohualkakilistli" "flor4"],[snippet 2 "pohualkakilistli" "flor5"],[snippet 2 "pohualkakilistli" "flor6"],[snippet 2 "pohualkakilistli" "flor7"],[snippet 2 "pohualkakilistli" "rita1"],[snippet 2 "pohualkakilistli" "rita2"],[snippet 2 "pohualkakilistli" "ramon1"],[snippet 2 "pohualkakilistli" "ramon2"],[snippet 2 "pohualkakilistli" "tino1"]],
+    [code 0 0],
+	[[snippet 0 "tlaiixkopioolin" "ce"],[snippet 0 "tlaiixkopioolin" "ome"],[snippet 0 "tlaiixkopioolin" "yei"],[snippet 0 "tlaiixkopioolin" "nahui"],[snippet 0 "tlaiixkopioolin" "macuilli"],[snippet 0 "tlaiixkopioolin" "chicoace"],[snippet 0 "tlaiixkopioolin" "chicome"],[snippet 0 "tlaiixkopioolin" "chicyei"],[snippet 0 "tlaiixkopioolin" "chicnahui"],[snippet 0 "tlaiixkopioolin" "matlactli"],[snippet 0 "tlaiixkopioolin" "matlactli-huan-ce"],[snippet 0 "tlaiixkopioolin" "matlactli-huan-ome"],[snippet 0 "tlaiixkopioolin" "matlactli-huan-yei"]],
+    [code 4 0],
+	[sandClock 5,stopwatch 2666]
+]
+
+######### Diego
+
+grid 2 1 
+[
+	[code 6 0],
+    [
+	    [code 100 0],
+	    [timeVision 9],
+	    [sandClock 11,stopwatch 2666]
+    ]
+]
+
+########### Alex
+
+grid 2 3
+[
+    [code 12 0],
+    [],
+    [],
+    [],
+    [],
+    []
+]

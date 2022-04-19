@@ -1,24 +1,24 @@
-setRotate (10) $ setCoord (-0.31) (range 0.52 0.5 $ sin 1) $ size 0.43 $ image "https://afrancob.github.io/temazcal2/script-afb/const1-2.svg?raw=true";
+blur (ramp 45 20 1) $ setRotate (10) $ setCoord (-0.31) (range 0.52 0.5 $ sin 1) $ size 0.43 $ image "https://afrancob.github.io/temazcal2/script-afb/const1-2.svg?raw=true";
 
-setRotate (359) $ setCoord (0.17) (range 0.21 0.2 $ sin 2) $ size 0.42 $ image "https://afrancob.github.io/temazcal2/script-afb/const3-5.svg?raw=true";
+blur (ramp 43 20 1) $ setRotate (359) $ setCoord (0.17) (range 0.21 0.2 $ sin 2) $ size 0.42 $ image "https://afrancob.github.io/temazcal2/script-afb/const3-5.svg?raw=true";
 
-setRotate (11) $ setCoord (0.04) (range 0.025 0.02 $ sin 4) $ size 0.24 $ image "https://afrancob.github.io/temazcal2/script-afb/const6.svg?raw=true";
+blur (ramp 47 20 1) $ setRotate (11) $ setCoord (0.04) (range 0.025 0.02 $ sin 4) $ size 0.24 $ image "https://afrancob.github.io/temazcal2/script-afb/const6.svg?raw=true";
 
-setRotate (355) $ setCoord (0.18) (range (-0.36) (-0.37) $ sin 8) $ size 0.44 $ image "https://afrancob.github.io/temazcal2/script-afb/const7.svg?raw=true";
+blur (ramp 49 20 1) $ setRotate (355) $ setCoord (0.18) (range (-0.36) (-0.37) $ sin 8) $ size 0.44 $ image "https://afrancob.github.io/temazcal2/script-afb/const7.svg?raw=true";
 
-setRotate (348) $ setCoord (-0.02) (range (-0.7) (-0.73) $ sin 16) $ size 0.23 $ image "https://afrancob.github.io/temazcal2/script-afb/const8.svg?raw=true";
+blur (ramp 41 20 1) $  setRotate (348) $ setCoord (-0.02) (range (-0.7) (-0.73) $ sin 16) $ size 0.23 $ image "https://afrancob.github.io/temazcal2/script-afb/const8.svg?raw=true";
 
 setPosY (ramp 40 0 (-0.28)) $ hsva (range 0 (ramp 30 1 0.3) $ sin 0.05) 0.85 0.9 0.85 $ font "Arial" $ size (ramps [10,25,2] [15,2.8,3.2,0.01]) $ text "Alvarez music intevenes electroacoustic ideology in many ways: from timbric to rhythmic imagination, from parametric notation to representation of rhythmic gesturing and cognition at the centre of techno-scientific and artistic music research. In this thesis there is no discussion of Temazcal. However, the piece composed after Temazcal, called Papalotl (insisting on the use of indigenous tropes) is discussed in technical terms. No mention of the poetic reality it evokes with the title. It would be safe to assume that Temazcal and the symbolic reality it portrays are not engaged as (traditional or ancestral) knowledge but as an inspiration or even an object of study."
 
 x << 1 + (lo*0.05);
-move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img ("https://afrancob.github.io/temazcal2/script-afb/i.svg") *0.1>> video;
-move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/ii.svg" *0.1>> video;
-move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/iii.svg" *0.1>> video;
-move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/iv.svg" *0.1>> video;
-move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/v.svg" *0.1>> video;
-move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/vi.svg" *0.1>> video;
-move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/vii.svg" *0.1>> video;
-move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/viii.svg" *0.1>> video;
-spin (saw 0.01) $ img "https://afrancob.github.io/temazcal2/script-afb/ozomatli.svg" * (0.2) >> video;
-spin (saw 0.01*(-1)) $ img "https://afrancob.github.io/temazcal2/script-afb/octante.svg" * (0.2) >> video;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img ("https://afrancob.github.io/temazcal2/script-afb/i.svg") *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/ii.svg" *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/iii.svg" *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/iv.svg" *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/v.svg" *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/vi.svg" *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/vii.svg" *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img "https://afrancob.github.io/temazcal2/script-afb/viii.svg" *0.1>> video <> 10;
+spin (saw 0.01) $ img "https://afrancob.github.io/temazcal2/script-afb/ozomatli.svg" * (0.2) >> video <> 10;
+spin (saw 0.01*(-1)) $ img "https://afrancob.github.io/temazcal2/script-afb/octante.svg" * (0.2) >> video <> 10;
 0.93 >> fdbk

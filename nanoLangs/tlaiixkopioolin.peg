@@ -2,12 +2,67 @@
 
 main = x:allRules* { return "##CineCer0\n" + x.join("") }
 
-allRules = v1 / v2 / v3 / v4 / v5 / anyCharacter
+allRules = mov13/ mov12/ mov11 / mov10 / mov9/ mov8 / mov7 / mov6 / mov5 / mov4 / mov3 / mov2 / mov1 / v36 / v35 / v34 / v33 / v32 / v31 / v30 / v29 / v28 / v27 /v26 / v25 / v24 / v23 / v22 / v21 /v20 / v19 / v18 / v17 / v16 / v15 / v14 / v13 / v12 /v11 / v10 / v9 / v8 / v7 / v6 /v5 / v4 / v3 / v2 / v1 / anyCharacter
 anyCharacter = .
 
-v1 = "amanecer."i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-1.mp4?raw=true;\"" }
-v2 = "amanecer:"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-2.mp4?raw=true;\"" }
-v3 = "amanecer,:"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-3.mp4?raw=true;\"" }
-v4 = "amanecer;:"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-4.mp4?raw=true;\"" }
-v5 = "amanecer|"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-5.mp4?raw=true;\"" }
+v3 = "amanecer3"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-3.mp4?raw=true;\"" }
+v4 = "amanecer4"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-4.mp4?raw=true;\"" }
+v1 = "amanecer1"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-1.mp4?raw=true;\"" }
+v2 = "amanecer2"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-2.mp4?raw=true;\"" }
+v5 = "amanecer5"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-5.mp4?raw=true;\"" }
+
+v6 = "retrato1"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-2/retrato-2.mp4?raw=true;\"" }
+v7 = "retrato2"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-2/retrato-3.mp4?raw=true;\"" }
+v8 = "retrato3"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-2/retrato-4.mp4?raw=true;\"" }
+v9 = "retrato4"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-2/retrato-5.mp4?raw=true;\"" }
+v10 = "retrato5"i { return "\"https://github.com/AFrancoB/temazcal2/blob/main/Momento-2/retrato-6.mp4?raw=true;\"" }
+
+v11 = "antiguo-temazcal1"i { return "vol 0.5 $ setCoord (0.5) (-0.3) $ opacity 0.78 $ size 0.35 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-3/antiguo-temazcal-5.mp4?raw=true\";" }
+v12 = "antiguo-temazcal2"i { return "vol 0.5 $ setCoord (0.5) (-0.3) $ opacity 0.78 $ size 0.35 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-3/antiguo-temazcal-3.mp4?raw=true\";" }
+v13 = "antiguo-temazcal3"i { return "vol 0.5 $ setCoord (0.5) (-0.3) $ opacity 0.78 $ size 0.35 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-3/antiguo-temazcal-2.mp4?raw=true\";" }
+v14 = "antiguo-temazcal4"i { return "vol 0.5 $ setCoord (0.5) (-0.3) $ opacity 0.78 $ size 0.35 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-3/antiguo-temazcal-1.mp4?raw=true\";" }
+v15 = "antiguo-temazcal5"i { return "vol 0.5 $ setCoord (0.5) (-0.3) $ opacity 0.78 $ size 0.35 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-3/antiguo-temazcal-4.mp4?raw=true\";" }
+
+v16 = "construccion1"i { return ""}
+v17 = "construccion2"i { return ""}
+v18 = "construccion3"i { return ""}
+v19 = "construccion4"i { return ""}
+v20 = "construccion5"i { return ""}
+
+v21 = "familia1"i { return ""}
+v22 = "familia2"i { return ""}
+v23 = "familia3"i { return ""}
+v24 = "familia4"i { return ""}
+v25 = "familia5"i { return ""}
+
+v26 = "montana1"i { return ""}
+v27 = "montana2"i { return ""}
+v28 = "montana3"i { return ""}
+v29 = "montana4"i { return ""}
+v30 = "montana5"i { return ""}
+
+v31 = "shaman1"i { return "opacity 0.7 $ size 0.33 $ \"https://github.com/AFrancoB/temazcal2/blob/main/videos-maracas_afb/temazcal_danza-2.mp4?raw=true\""}
+v32 = "shaman2"i { return "setPosX 0.5 $ opacity 0.7 $ size 0.33 $ \"https://github.com/AFrancoB/temazcal2/blob/main/videos-maracas_afb/temazcal_closeupizq-2.mp4?raw=true\""}
+v33 = "shaman3"i { return "setPosX (-0.5) $ opacity 0.7 $ size 0.33 $ \"https://github.com/AFrancoB/temazcal2/blob/main/videos-maracas_afb/temazcal_2circulos-6.mp4?raw=true\""}
+
+v34 = "luz1"i { return "setCoord (-0.1) (-0.2) $ opacity 0.78 $ size 0.75 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-13/final-3.mp4?raw=true\";"}
+v35 = "luz2"i { return "setCoord (-0.1) (-0.2) $ opacity 0.78 $ size 0.75 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-13/final-2.mp4?raw=true\";"}
+v36 = "luz3"i { return "setCoord (-0.1) (-0.2) $ opacity 0.78 $ size 0.75 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-13/final-1.mp4?raw=true\";"}
+
+mov1 = "ce"i { return "vol 1.3 $ opacity 0.5 $ blur 2 $ circleMask' 0.8 0.675 0.8 $ \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-1.mp4?raw=true\"; opacity (range 0.5 0.2 $ sin 0.1) $ vol 1.5 $ z (-1) $ seg 0.2 0.25 10 $ size 1 $ image \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer.jpg?raw=true\"; opacity (range 0.1 0.8 $ sin 0.2) $ opacity 0.1 $ image \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-10/teoria_rhg/teoria-2.jpg?raw=true\"; setRotate (10) $ setCoord (-0.31) (0.5) $ size 1 $ image \"https://afrancob.github.io/temazcal2/script-afb/const1-2.svg?raw=true\"; setRotate (359) $ setCoord (0.17) (0.2) $ size 0.42 $ image \"https://afrancob.github.io/temazcal2/script-afb/const3-5.svg?raw=true\"; setRotate (11) $ setCoord (0.04) (0.02) $ size 0.24 $ image \"https://afrancob.github.io/temazcal2/script-afb/const6.svg?raw=true\"; setRotate (355) $ setCoord (0.18) (-0.36) $ size 0.44 $ image \"https://afrancob.github.io/temazcal2/script-afb/const7.svg?raw=true\"; setRotate (348) $ setCoord (-0.02) (-0.7) $ size 0.23 $ image \"https://afrancob.github.io/temazcal2/script-afb/const8.svg?raw=true\";" }
+mov2 = "ome"i { return "blur (ramps [15,5] [0,0,10]) $ setPosX (ramp 10 0.7 (-0.1)) $ setRotate (ramp 5 10 25) $ setCoord (-0.31) (0.5) $ size 1.5 $ image \"https://afrancob.github.io/temazcal2/script-afb/const1-2.svg?raw=true\"; opacity (ramps [20,5] [1,1,0]) $ blur (ramp 10 30 1) $ setRotate (ramp 30 291 287) $ setCoord (0.1) (ramp 10 (-4.5) (-3.8)) $ size 5 $ image \"https://afrancob.github.io/temazcal2/script-afb/ii.svg?raw=true\";"}
+mov3 = "yei"i { return "opacity (ramp 30 1.5 0) $ blur (ramps [5,5,10,5] [20,1,1,3]) $ setCoord (0) (ramp 10 (-5) (-4)) $ size 5 $ setRotate 247 $ image \"https://afrancob.github.io/temazcal2/script-afb/iii.svg?raw=true\";"}
+mov4 = "nahui"i { return "size 0.62 $ blur (ramps [45,1] [0,0,20]) $ size 1.5 $ setCoord (0) (ramps [20,3,3,1] [-0.5,-0.5,0.2,0.2,0.5]) $ setRotate (ramps [6,1,6,1,6,1,6,1,6,1,6,3] [90,90,15,15,-30,-30,-90,-90,-40,-40,50,50,0]) $ image \"https://afrancob.github.io/temazcal2/script-afb/const3-5.svg?raw=true\";"} 
+
+mov5 = "macuilli"i { return ""}
+
+mov6 = "chicoace"i { return "setPosY (ramp 4 0 (-0.05)) $ blur (ramp 1 10 1) $ setRotate (ramp 5 0 100) $ size (ramp 5 1.66 1.3) $ image \"https://github.com/AFrancoB/temazcal2/blob/main/script-afb/const6.svg?raw=true\";"}
+mov7 = "chicome"i { return "setPosX (range 0 0.05 $ sin 0.01) $ setPosY (ramp 5 (-0.05) 0.5) $ blur (ramp 1 1 5) $ setRotate (ramp 5 100 0) $ size (ramp 3 1.3 0.5) $ image \"https://github.com/AFrancoB/temazcal2/blob/main/script-afb/const6.svg?raw=true\"; setPosX (range (-0.05) 0.05 $ sin 0.01) $ blur (ramp 5 20 1) $ image \"https://github.com/AFrancoB/temazcal2/blob/main/script-afb/const7.svg?raw=true\"; setPosY (ramps [0.1,3.9,0.1] [(-0.5),0.5,0.1,0.5]) $ setPosX (ramps [0.1,1.9,0.1,1.9] [(-0.5),0.5,0.5,(-0.3),0]) $ opacity (range 0 0.8 $ sin 5) $ size 0.3 $ seg 0.2 0.8 4 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/videos-maracas_afb/temazcal_flow-1.mp4?raw=true\";setPosY (ramps [0.1,3.9,0.1] [(-0.5),0.5,0.1,0.5]) $ setPosX (ramps [0.1,1.9,0.1,1.9] [(-0.5),0.5,0.5,(-0.3),0]) $ opacity (range 0 0.8 $ sin 5.1) $ blur 5 $ size 0.4 $ \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-7-8/clip-1.mp4?raw=true\";"}
+mov8 = "chicyei"i { return "opacity (ramps [23,1] [1,1,0]) $ setPosX (range 0 0.05 $ sin 0.01) $ setPosY (ramp 5 (0.5) 0.5) $ blur (ramp 1 5 5) $ setRotate (ramp 5 0 0) $ size (ramp 3 0.5 0.5) $ image \"https://github.com/AFrancoB/temazcal2/blob/main/script-afb/const6.svg?raw=true\"; opacity (ramps [23,1] [1,1,0]) $ setPosX (ramp 3 0 0.2) $ blur (ramp 5 1 3) $ size (ramp 4 1 0.2) $ image \"https://github.com/AFrancoB/temazcal2/blob/main/script-afb/const7.svg?raw=true\"; size (ramps [23,0.5] [1.4,1,0]) $ blur (ramp 2 10 1) $ setRotate (ramps [6,1,5,1,4,1,4,1] [300,300,370,370,290,290,390,390,360]) $ image \"https://github.com/AFrancoB/temazcal2/blob/main/script-afb/const8.svg?raw=true\";"}
+mov9 = "chicnahui"i { return "setCoord (-1.25) 0 $ seg 0.2 0.25 (3) $ rectMask 0.27 0.13 0.5 0.7  $ vol (ramps [5,1] [0.75,0.75,0.1]) $ \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-9/ortiz.mp4?raw=true\"; setPosX (ramps [5,1] [(-0.75),(-0.75),(-3)]) $ font \"Arial\" $ text \"where are the voices of composers that nourish from vernacular melodies?\"; setCoord (-0.75) 0 $ seg 0.392 0.396 (0.5) $ rectMask 0.27 0.13 0.5 0.7  $ vol (ramps [5,1,5,1] [0.1,0.1,0.75,0.75,0.1]) $ \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-9/ortiz.mp4?raw=true\"; setCoord (-0.25) 0 $ seg 0.533 0.543 (1) $ rectMask 0.27 0.13 0.5 0.7  $ vol (ramps [5,1,5,1,1,5] [0.1,0.1,0.1,0.1,0.1,0.75,0.75,0.1]) $ \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-9/ortiz.mp4?raw=true\"; setCoord (0.25) 0 $ seg 0.8 0.95 (10) $ rectMask 0.27 0.13 0.5 0.7  $ vol (ramps [5,1,5,1,1,5,1,5] [0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.75,0.75,0.1]) $ \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-9/ortiz.mp4?raw=true\"; setPosX (ramps [5,1,5,1,1,5,1,5] [5,5,5,5,5,5,5,5,0,0,5]) $ font \"Arial\" $ text \"it is not black or white, it is something deeper, it is how to work them and how to appropriate them to generate something very personal that, as a creator, represents me.\";"}
+
+mov10 = "matlactli"i { return "blur (ramp 45 20 1) $ setRotate (10) $ setCoord (-0.31) (range 0.52 0.5 $ sin 1) $ size 0.43 $ image \"https://afrancob.github.io/temazcal2/script-afb/const1-2.svg?raw=true\"; blur (ramp 43 20 1) $ setRotate (359) $ setCoord (0.17) (range 0.21 0.2 $ sin 2) $ size 0.42 $ image \"https://afrancob.github.io/temazcal2/script-afb/const3-5.svg?raw=true\"; blur (ramp 47 20 1) $ setRotate (11) $ setCoord (0.04) (range 0.025 0.02 $ sin 4) $ size 0.24 $ image \"https://afrancob.github.io/temazcal2/script-afb/const6.svg?raw=true\"; blur (ramp 49 20 1) $ setRotate (355) $ setCoord (0.18) (range (-0.36) (-0.37) $ sin 8) $ size 0.44 $ image \"https://afrancob.github.io/temazcal2/script-afb/const7.svg?raw=true\"; blur (ramp 41 20 1) $  setRotate (348) $ setCoord (-0.02) (range (-0.7) (-0.73) $ sin 16) $ size 0.23 $ image \"https://afrancob.github.io/temazcal2/script-afb/const8.svg?raw=true\"; setPosY (ramp 40 0 (-0.28)) $ hsva (range 0 (ramp 30 1 0.3) $ sin 0.05) 0.85 0.9 0.85 $ font \"Arial\" $ size (ramps [10,25,2] [15,2.8,3.2,0.01]) $ text \"Alvarez music intervenes electroacoustic ideology in many ways: from timbric to rhythmic imagination, from parametric notation to representation of rhythmic gesturing and cognition at the centre of techno-scientific and artistic music research. In this thesis there is no discussion of Temazcal. However, the piece composed after Temazcal, called Papalotl (insisting on the use of indigenous tropes) is discussed in technical terms. No mention of the poetic reality it evokes with the title. It would be safe to assume that Temazcal and the symbolic reality it portrays are not engaged as (traditional or ancestral) knowledge but as an inspiration or even an object of study.\""}
+mov11 = "matlactli-huan-ce"i { return "vol 0.5 $ opacity 0.8 $ size 0.5 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-11/foto-1.mp4?raw=true\"; font \"Arial\" $ text \"The hegemonic narration of the Mexican state allows us to speculate on a fictional link between old indigenous temporal conceptions and Alvarez’s research on cognition, gesture, time and movement.\"; setPosY (-0.25) $ font \"Arial\" $ text \"In this way, Alvarez apropiates, assimilates, supplants and re-tells forms of knowledge developed by a community in which he does not participate nor belong.\"; setPosY (-0.5) $ font \"Arial\" $ text \"This pattern has been observed before: a nostalgic re-telling of an idealised past followed by a future envisioned as an identical repetition of such ideal past. \";"}
+mov12 = "matlactli-huan-ome"i { return "rgba 1 1 1 (ramp 5 0 1) $ font \"Arial\" $ setPosY 0.85 $ text \"Temazcal's score is a commodity that can be purchased on the composer's website: https://temazcal.co.uk/store/\"; rgba 1 1 1 (ramp 8 0 1) $ size (range 1 5 $ sin 0.1) $ font \"Arial\" $ setPosY 0.5 $ text \"Only 55 USD.\"; rgba 1 1 1 (ramp 15 0 1) $ font \"Arial\" $ setPosY 0.78 $ text \"Alvarez has built a career and a reputation feeding from the prestige of his English education as well as the mysticism of his Mexican identity. Simultaneously, broadening the scope of the colonial European project and advancing a Mexican modernity in which indigenous people are a relic of the past.\"; setCoord 0.3 (-0.3) $ vol 0.8 $ opacity 0.8 $ size 0.5 $ video \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-12/hierbas-4.mp4?raw=true\";"}
+mov13 = "matlactli-huan-yei"i { return "font \"Arial\" $ setPosY 0.99 $ size 1.5 $ rgba 0.8 0.8 0.8 (ramps [25,15] [1,1,0]) $ text \"The last section of Temazcal 1 is interesting. A traditional folkloric piece for harp, making the maraca player improvise an accompaniment, suddenly appears. The mood of the piece shifts dramatically: from a shamanic intense experience to a festive modern environment. Perhaps implying that the Mexican (modern) identity has its roots in rituals like the Temazcal.\"; font \"Arial\" $ setPosY 0.99 $ size 1.5 $ rgba 0.8 0.8 0.8 (ramps [25,15,30,15] [0,0,1,1,0]) $ text \"What I imagine is a restaurant in a nice tourist location. Packed with gringo, euro-gringo and whitexican tourists with pink cheeks. Tired and satisfied, in the middle of their holidays. Eating a feast. Very cheap too! A table being served by the locals; filled with all kinds of food and drinks. The European descendants devouring everything, people with darker skin trying to smile, to move fast. Trying to keep the drinks flowing. The hungry tourists laugh and enjoy the background music. The hungry listeners demand another tune so the feast can continue, joyful and endless.\";"}
 

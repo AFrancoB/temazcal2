@@ -1,8 +1,0 @@
-##JSoLang ce-ollin
-
-main = x:allRules* { return "##CineCer0\n" + x.join("") }
-allRules = mov1 / anyCharacter
-anyCharacter = .
-
-mov1 = "."i { return "opacity 0.5 $ blur 2 $ circleMask' 0.8 0.675 0.8 $ \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer-1.mp4?raw=true\"; opacity (range 0.5 0.2 $ sin 0.1) $ vol 1.5 $ z (-1) $ seg 0.2 0.25 10 $ size 1 $ image \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer.jpg?raw=true\"; opacity (range 0.1 0.8 $ sin 0.2) $ opacity 0.1 $ image \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-10/teoria_rhg/teoria-2.jpg?raw=true\"; setRotate (10) $ setCoord (-0.31) (0.5) $ size 1 $ image \"https://afrancob.github.io/temazcal2/script-afb/const1-2.svg?raw=true\"; setRotate (359) $ setCoord (0.17) (0.2) $ size 0.42 $ image \"https://afrancob.github.io/temazcal2/script-afb/const3-5.svg?raw=true\"; setRotate (11) $ setCoord (0.04) (0.02) $ size 0.24 $ image \"https://afrancob.github.io/temazcal2/script-afb/const6.svg?raw=true\"; setRotate (355) $ setCoord (0.18) (-0.36) $ size 0.44 $ image \"https://afrancob.github.io/temazcal2/script-afb/const7.svg?raw=true\"; setRotate (348) $ setCoord (-0.02) (-0.7) $ size 0.23 $ image \"https://afrancob.github.io/temazcal2/script-afb/const8.svg?raw=true\";" }
-

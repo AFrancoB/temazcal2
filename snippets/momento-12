@@ -7,10 +7,10 @@ setCoord 0.3 (-0.3) $ vol 0.8 $ opacity 0.8 $ size 0.5 $ video "https://github.c
 s "maracasd maracas" # speed "1" # gain "1.5 1" # n (irand 10)
 
 v << vid "https://afrancob.github.io/temazcal2/Momento-12/hierbas-1.mov";
-x <<  tile fy $ zoom 0.0015 $ (sin fx * 0.05);
-y <<  (sin fy * 0.055) ;
+x <<  tile [fract ebeat,0] $ (sin fx * 0.05);
+y <<  tile (fft fy*2) $ tile [0,etime] $ (sin fy * 0.055) ;
 huedistance1 << (1 - abs (rgbh v - 0.33)) ** 2; 
-huedistance2 << (1 - abs (rgbh v - 0)) ** 2;
+huedistance2 << (1 - abs (rgbh v - (sin 0.05))) ** 2;
 sat << rgbs v * 8;
-move [x, y] $ prox 0 **4 * (v * (huedistance1 ** huedistance2) * sat) >> video;
+move [x, y] $ prox 0 **4 * (v * (huedistance1 + huedistance2) * sat) >> video <> 10;
 
