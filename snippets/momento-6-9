@@ -1,6 +1,16 @@
-move [0,-0.5] $ zoom (1.5) $ spin (0 ~~0.75 $ sin 0.05) $ img "https://afrancob.github.io/temazcal2/script-afb/vi.svg" *0.75>> video <> 10;
-move [0,-0.5] $ zoom (1.3) $ spin (0 ~~0.75 $ sin 0.05) $ img "https://afrancob.github.io/temazcal2/script-afb/vii.svg" *0.2>> video <> 10;
-move [0,-0.5] $ zoom (1.3) $ spin (0 ~~0.75 $ sin 0.05) $ img "https://afrancob.github.io/temazcal2/script-afb/viii.svg" *0.2>> video <> 10;
+w << img "https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-1.jpg";
+x << img "https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-3.jpg";
+y << img "https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-4.jpg";
+z << img "https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-5.jpg";
+n << step [0,1,2,3] $ lfsaw [cps/4];
+teoria << ((n==0)*w)+:((n==1)*x)+:((n==2)*y)+:((n==3)*z);
+move [((-0.2)~~0.2 $ saw 0.011), ((-0.2)~~0.2 $ saw 0.013)] $ zoom (tile (etime*0.05) (ebeat*0.05)) $ teoria * 0.13 * (1+(fract beat * (-1))) >> video;
+
+sp << step [0,0.25,0.5,0.75,1,1.25,1.5,1.75] $ lfsaw (cps/(ebeat*8));
+
+move [(0~~0.1 $ sin 0.1),-2.5] $ zoom (3) $ spin sp $ img "https://afrancob.github.io/temazcal2/script-afb/vi.svg" * teoria >> video <> 10;
+move [(0~~0.1 $ sin 0.1),-2.5] $ zoom (3) $ spin sp $ img "https://afrancob.github.io/temazcal2/script-afb/vii.svg" * teoria>> video <> 10;
+move [(0~~0.1 $ sin 0.1),-2.5] $ zoom (3) $ spin sp $ img "https://afrancob.github.io/temazcal2/script-afb/viii.svg" * teoria>> video <> 10;
 0.8 >> fdbk;
 
 -- momento 6 cineCer0

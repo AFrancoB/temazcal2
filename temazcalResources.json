@@ -64,5 +64,21 @@
 { "url":"samples-maracas_afb/stf-18BUENAZO.wav","type":"audio","bank":"maracasf","n":18},
 { "url":"samples-maracas_afb/stf-19.wav","type":"audio","bank":"maracasf","n":19},
 { "url":"samples-maracas_afb/stf-20.wav","type":"audio","bank":"maracasf","n":20},
-{ "url":"samples-maracas_afb/stf-21.wav","type":"audio","bank":"maracasf","n":21}
+{ "url":"samples-maracas_afb/stf-21.wav","type":"audio","bank":"maracasf","n":21},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/ehecatl/ehecatl1.wav","type":"audio","bank":"ehecatl","n":0},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/ehecatl/ehecatl2.wav","type":"audio","bank":"ehecatl","n":1},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/ehecatl/ehecatl3.wav","type":"audio","bank":"ehecatl","n":2},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/ehecatl/ehecatl4.wav","type":"audio","bank":"ehecatl","n":3},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/ehecatl/ehecatl5.wav","type":"audio","bank":"ehecatl","n":4},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/ehecatl/ehecatl6.wav","type":"audio","bank":"ehecatl","n":5},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/huehue/huehueBass.wav","type":"audio","bank":"huehue","n":0},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/huehue/huehueStick.wav","type":"audio","bank":"huehue","n":1},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/huehue/huehueStick3Acc.wav","type":"audio","bank":"huehue","n":2},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/teponaxtlimeh/teponaxtli1.wav","type":"audio","bank":"teponaxtli","n":0},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/teponaxtlimeh/teponaxtli2.wav","type":"audio","bank":"teponaxtli","n":1},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/teponaxtlimeh/teponaxtli3.wav","type":"audio","bank":"teponaxtli","n":2},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/teponaxtlimeh/teponaxtliStick1.wav","type":"audio","bank":"teponaxtli","n":3},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/teponaxtlimeh/teponaxtliStick2.wav","type":"audio","bank":"teponaxtli","n":4},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/teponaxtlimeh/teponaxtliStick3.wav","type":"audio","bank":"teponaxtli","n":5},
+{ "url":"https://afrancob.github.io/UHM_Archive/UHM/kakilistli/teponaxtlimeh/teponaxtliStick4.wav","type":"audio","bank":"teponaxtli","n":6}
 ]
