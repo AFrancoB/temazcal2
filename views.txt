@@ -26,9 +26,9 @@ grid 2 2 []
 grid 2 3 
 [
 	[code 2 0],
-	[[snippet 2 "pohualkakilistli" "rolando1"],[snippet 2 "pohualkakilistli" "rolando2"],[snippet 2 "pohualkakilistli" "rolando3"],[snippet 2 "pohualkakilistli" "rolando4"],[snippet 2 "pohualkakilistli" "clara1"],[snippet 2 "pohualkakilistli" "clara2"],[snippet 2 "pohualkakilistli" "clara3"],[snippet 2 "pohualkakilistli" "clara4"],[snippet 2 "pohualkakilistli" "clara5"],[snippet 2 "pohualkakilistli" "flor1"],[snippet 2 "pohualkakilistli" "flor2"],[snippet 2 "pohualkakilistli" "flor3"],[snippet 2 "pohualkakilistli" "flor4"],[snippet 2 "pohualkakilistli" "flor5"],[snippet 2 "pohualkakilistli" "flor6"],[snippet 2 "pohualkakilistli" "flor7"],[snippet 2 "pohualkakilistli" "rita1"],[snippet 2 "pohualkakilistli" "rita2"],[snippet 2 "pohualkakilistli" "ramon1"],[snippet 2 "pohualkakilistli" "ramon2"],[snippet 2 "pohualkakilistli" "tino1"]],
+	cols [snippet 2 False "pohualkakilistli" "rolando1",snippet 2 False "pohualkakilistli" "rolando2",snippet 2 False "pohualkakilistli" "rolando3",snippet 2 False "pohualkakilistli" "rolando4",snippet 2 False "pohualkakilistli" "clara1",snippet 2 False "pohualkakilistli" "clara2",snippet 2 False "pohualkakilistli" "clara3",snippet 2 False "pohualkakilistli" "clara4",snippet 2 False "pohualkakilistli" "clara5",snippet 2 False "pohualkakilistli" "flor1",snippet 2 False "pohualkakilistli" "flor2",snippet 2 False "pohualkakilistli" "flor3",snippet 2 False "pohualkakilistli" "flor4",snippet 2 False "pohualkakilistli" "flor5",snippet 2 False "pohualkakilistli" "flor6",snippet 2 False "pohualkakilistli" "flor7",snippet 2 False "pohualkakilistli" "rita1",snippet 2 False "pohualkakilistli" "rita2",snippet 2 False "pohualkakilistli" "ramon1",snippet 2 False "pohualkakilistli" "ramon2",snippet 2 False "pohualkakilistli" "tino1"],
     [code 0 0],
-	[[snippet 0 "tlaiixkopioolin" "ce"],[snippet 0 "tlaiixkopioolin" "ome"],[snippet 0 "tlaiixkopioolin" "yei"],[snippet 0 "tlaiixkopioolin" "nahui"],[snippet 0 "tlaiixkopioolin" "macuilli"],[snippet 0 "tlaiixkopioolin" "chicoace"],[snippet 0 "tlaiixkopioolin" "chicome"],[snippet 0 "tlaiixkopioolin" "chicyei"],[snippet 0 "tlaiixkopioolin" "chicnahui"],[snippet 0 "tlaiixkopioolin" "matlactli"],[snippet 0 "tlaiixkopioolin" "matlactli-huan-ce"],[snippet 0 "tlaiixkopioolin" "matlactli-huan-ome"],[snippet 0 "tlaiixkopioolin" "matlactli-huan-yei"]],
+	cols [snippet 0 False "tlaiixkopioolin" "ce",snippet 0 False "tlaiixkopioolin" "ome",snippet 0 False "tlaiixkopioolin" "yei",snippet 0 False "tlaiixkopioolin" "nahui",snippet 0 False "tlaiixkopioolin" "macuilli",snippet 0 False "tlaiixkopioolin" "chicoace",snippet 0 False "tlaiixkopioolin" "chicome",snippet 0 False "tlaiixkopioolin" "chicyei",snippet 0 False "tlaiixkopioolin" "chicnahui",snippet 0 False "tlaiixkopioolin" "matlactli",snippet 0 False "tlaiixkopioolin" "matlactli-huan-ce",snippet 0 False "tlaiixkopioolin" "matlactli-huan-ome",snippet 0 False "tlaiixkopioolin" "matlactli-huan-yei"],
     [code 4 0],
 	[sandClock 5,stopwatch 2666]
 ]
@@ -50,9 +50,9 @@ grid 2 1
 grid 2 3
 [
     [code 12 0],
-    [],
-    [],
-    [],
-    [],
-    []
+    [code 14 0],
+    [code 16 0],
+    [code 100 0],
+    [code 101 0],
+    [code 102 0]
 ]
