@@ -1,6 +1,6 @@
 ch << step [45, 53, 62, 77] $ lfsaw [1,2,3,4];
-lpf (100~~2666 $ sin [0.01,0.015]) 1 $ saw (midicps ch) *(-18)db >> audio <> 10; 
-tri (midicps [38.01,26]) *(-18)db >> audio <> 10;
+lpf (100~~2666 $ sin [0.01,0.015]) 1 $ saw (midicps ch) *(-30)db >> audio <> 10; 
+tri (midicps [38.01,26]) *(-24)db >> audio <> 10;
 
 i << img "https://afrancob.github.io/temazcal2/Momento-3/antiguo-temazcal.jpg";
 i * blend [0.1,ebeat*0.05,0.1,mid*0.85] >> video <> 10;
