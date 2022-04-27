@@ -1,8 +1,13 @@
 ##JSoLang iixkopinomej
 
-main = x:allRules* { return "##CineCer0\n" + x.join("") }
-allRules = f1 / anyCharacter
+main = x:allRules* { return "##Punctual\n" + x.join("") }
+allRules = r1 / r2 / r3 / r4 / anyCharacter
 anyCharacter = .
 
-f1 = "amanecer"i { return "image \"https://github.com/AFrancoB/temazcal2/blob/main/Momento-1/amanecer.jpg?raw=true\"" }
+r1 = "retratos"i { return "img \"https://afrancob.github.io/temazcal2/Momento-2/retrato-6.jpg\"" }
+r2 = "ome"i { return "img \"https://afrancob.github.io/temazcal2/Momento-2/retrato-6.jpg\"" }
+
+r3 = "antiguo-temazcal"i { return "img \"https://afrancob.github.io/temazcal2/Momento-3/antiguo-temazcal.jpg\""}
+
+r4 = "iv"i { return "\"https://afrancob.github.io/temazcal2/script-afb/iv.svg\"" }
 

@@ -41,7 +41,7 @@ grid 2 1
     [
 	    [code 100 0],
 	    [timeVision 9],
-	    [sandClock 11,stopwatch 2666]
+	    rows [sandClock 11,stopwatch 2666]
     ]
 ]
 
