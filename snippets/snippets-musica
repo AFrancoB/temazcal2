@@ -17,7 +17,10 @@ s "[maracas(<8 7 6 5 9 9 7 9>,9), {maracasf ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~, maracasd ~ 
 jux (stut 2 0.5 (1/16)) $ every 2 (jux $ slow 3 . rev) $ s "[maracasf(16,16), maracasd(< 3 4 5>,8,<1 3 2 0 1>), {maracas*2 ~ ~ ~ ~ maracasp ~}%32]" # n (irand 21) # gain "1.5 1 1 1 1.3 1 1 1 1.5 1 1 1 1.3 1 1 1 " # speed "{1 2 2 1 2}%8"
 
 -- 7
-7 -- aqui estaria bien agregar unos huehues marcnado el 7 de manera muy clara
+stack [
+every 3 (|+| n "0 1 2 3") $ slow 1 $ s "huehue:3(4,7)" # note "[0,-12,-24]" # gain 1.5,
+s "maracasf maracas maracasf  maracas maracasd maracasf ~" # n (irand 8) # gain "1.5 1 1.5 1 1.5 1 1"
+]
 
 -- 8
 slow 2 $ every 24 (stut 4 0.5 (1/5)) $ every 2 (jux $ slow 0.75 . rev) $ s "[maracasf(12,12), maracasd(<3 4 5 4 3 2 6>,12,<8 4 12 0>), {maracas*2 ~ ~ ~ ~ maracasp ~}%12]" # n (irand 21) # gain "1.5 1 1 1.3 1 1 1.5 1 1 1.3 1 1" # speed "0.95 2 1 2 2 1 0.95 2 1 1 2 2"
