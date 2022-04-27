@@ -1,7 +1,7 @@
 ##JSoLang iixkopinomej
 
 main = x:allRules* { return "##Punctual\n" + x.join("") }
-allRules = r1 / r2 / r3 / r4 / anyCharacter
+allRules = r1 / r2 / r3 / r4 / r5 / r6 / r7 / r8 / r9 / r10 / anyCharacter
 anyCharacter = .
 
 r1 = "retratos"i { return "img \"https://afrancob.github.io/temazcal2/Momento-2/retrato-6.jpg\"" }
@@ -10,4 +10,17 @@ r2 = "ome"i { return "img \"https://afrancob.github.io/temazcal2/Momento-2/retra
 r3 = "antiguo-temazcal"i { return "img \"https://afrancob.github.io/temazcal2/Momento-3/antiguo-temazcal.jpg\""}
 
 r4 = "iv"i { return "\"https://afrancob.github.io/temazcal2/script-afb/iv.svg\"" }
+
+r5 = "nuevo-temazcal"i { return "img \"https://afrancob.github.io/temazcal2/Momento-4/construccion-2.jpeg\""}
+
+r6 = "teoria"i { return "img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-1.jpg\""}
+
+r7 = "deLas"i { return "img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-3.jpg\""}
+
+r8 = "constelaciones"i { return "img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-4.jpg\""}
+
+r9 = "circumpolares"i { return "img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-5.jpg\""}
+
+r10 = "percusores"i { return "x << 1 + (lo*0.05); move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img (\"https://afrancob.github.io/temazcal2/script-afb/i.svg\") *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/ii.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/iii.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/iv.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/v.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/vi.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/vii.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/viii.svg\" *0.1>> video <> 10; spin (saw 0.01) $ img \"https://afrancob.github.io/temazcal2/script-afb/ozomatli.svg\" * (0.2) >> video <> 10; spin (saw 0.01*(-1)) $ img \"https://afrancob.github.io/temazcal2/script-afb/octante.svg\" * (0.2) >> video <> 10; 0.93 >> fdbk"}
+
 

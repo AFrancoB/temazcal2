@@ -35,24 +35,31 @@ grid 2 3
 
 ######### Diego
 
-grid 2 1 
-[
+grid 2 1 [
 	[code 6 0],
-    [
-	    [code 100 0],
-	    [timeVision 9],
-	    rows [sandClock 11,stopwatch 2666]
-    ]
+	[[code 50 0],
+	[timeVision 9],
+	rows [sandClock 11,stopwatch 2666]
+	]
 ]
 
 ########### Alex
 
-grid 2 3
+grid 2 2
 [
     [code 12 0],
     [code 14 0],
     [code 16 0],
+    rows [sandClock 13,stopwatch 2666]
+]
+
+########## cambiar langs
+
+grid 2 2
+[
     [code 100 0],
     [code 101 0],
-    [code 102 0]
+    [code 102 0],
+    [code 103 0]
 ]
+
