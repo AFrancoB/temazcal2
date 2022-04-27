@@ -1,0 +1,6 @@
+i << img "https://afrancob.github.io/temazcal2/Momento-4/construccion-2.jpeg";
+x << (fft fx*ebeat*0.002);
+y << (fft fy*ebeat*0.002);
+huedistance1 << (1 - abs (rgbh i - (0.01~~ 0.99 $ saw (cps/18)))); 
+sat << rgbs i * 8;
+zoom (ebeat/32) $ move [x-0.1, y-0.1] $ (prox [0,(-0.1)])**8 * (i * (huedistance1) * sat) >> video <> 10;
