@@ -10,6 +10,14 @@ spin (saw (cps/64)) $ move [-2,3.5] $ zoom (5~~5.1 $ sin (cps)) $ img "https://a
 
 fx * hi * 2 >> red <> 10;
 
+i << img "https://afrancob.github.io/temazcal2/Momento-4/construccion-2.jpeg";
+x << (fft fx*ebeat*0.002);
+y << (fft fy*ebeat*0.002);
+huedistance1 << (1 - abs (rgbh i - (0.01~~ 0.99 $ saw (cps/18)))); 
+sat << rgbs i * 8;
+zoom (ebeat/32) $ move [x-0.1, y-0.1] $ (prox [0,(-0.1)])**8 * (i * (huedistance1) * sat) >> video <> 10;
+
+
 blur (ramps [45,1] [0,0,20]) $ size 1.5 $ setCoord (0) (ramps [20,3,3,1] [-0.5,-0.5,0.2,0.2,0.5]) $ setRotate (ramps [6,1,6,1,6,1,6,1,6,1,6,3] [90,90,15,15,-30,-30,-90,-90,-40,-40,50,50,0]) $ image "https://afrancob.github.io/temazcal2/script-afb/const3-5.svg?raw=true";
 
 s "[maracas(<8 7 6 5 10 10 10 10>,10), {maracasf ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~, maracasd ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~, maracasp ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  }%20]" # gain "1.5 1 1 1.5 1 1 1.5 1 1.5 1"
