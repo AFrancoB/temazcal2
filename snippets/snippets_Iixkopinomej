@@ -1,0 +1,125 @@
+-- copyPasta de iixkopinomej
+
+---- 2
+##iixkopinomej
+
+0 >> audio <> 20;
+x << step [0,0.25,0.5,0.25,0,-0.25,-0.5,-0.25] $ lfsaw (cps/4); 
+y << step [0.65,0.5,0,-0.5,-0.65,-0.5,0,0.5] $ lfsaw (cps/4);
+sp << step [1.5,1.5,1.5,1.5,1.5,1.5,1.6,1.65,1.725,1.7,1.75] $ (fract beat);
+
+move [0,-5.5] $ spin 1.66  $ zoom (linlin [0,20] [4.5,8] $ ebeat) $ ome * (fb 0.85) >> video;
+move [0,-2.5] $  spin (sp) $ zoom 3 $ ome * (1 + (fract ebeat *(-1))) *(1/(ebeat)) * (fb 0.95) >> video <> 10;
+
+(move [0.086, (-0.5)] $ zoom 1.7 $ retratos)* circle [(sin 0.1)*0.05,0] ((fract $ ebeat)*(mid*1.3)) >> video <> 10;
+(move [0.086, (-0.5)] $ zoom 1.7 $ retratos)* rect (x++y) [0.5,0.5] >> video <> 10;
+
+spin (saw 0.001) $zoom (0.1~~12 $ sin (cps/16)) $  tile (abs ebeat ++ abs ebeat) $ retratos *(blend [sin 0.15,sin 0.1,sin 0.3,sin 0.5]) *(-6)db >> video <> 10;
+
+----- 3
+##iixkopinomej
+
+ch << step [45, 53, 62, 77] $ lfsaw [1,2,3,4];
+lpf (100~~2666 $ sin [0.01,0.015]) 1 $ saw (midicps ch) *(-30)db >> audio <> 10; 
+tri (midicps [38.01,26]) *(-24)db >> audio <> 10;
+antiguo-temazcal * blend [0.1,ebeat*0.05,0.1,mid*0.85] >> video <> 10;
+
+----- 4
+##iixkopinomej
+
+0 >> audio <> 30;
+-- spin (-0.1) $ rect [(0.2),0.75] [0.5,0.25] >> red <> 3;
+-- spin (-0.1) $ rect [(-0.15),0.3] [0.95,0.25] >> red <> 3;
+-- circle [0,0.4] [0.4] >> red <> 3; 
+-- circle [(0.05),0.75] [0.8] >> red <> 3; 
+-- spin (-0.01) $ rect [(0.4),(0.2)] [0.35,0.25] >> red <> 3;
+-- spin (-0.1) $ rect [(0),(-0.5)] [0.6,0.25] >> red <> 3;
+
+spin (saw (cps/64)) $ move [-2,3.5] $ zoom (5~~5.1 $ sin (cps)) $ iv_ >> video <> 10;
+
+fx * hi * 2 >> red <> 10;
+
+x << (fft fx*ebeat*0.002);
+y << (fft fy*ebeat*0.002);
+huedistance1 << (1 - abs (rgbh nuevo-temazcal - (0.01~~ 0.99 $ saw (cps/18)))); 
+sat << rgbs nuevo-temazcal * 8;
+zoom (ebeat/32) $ move [x-0.1, y-0.1] $ (prox [0,(-0.1)])**8 * (nuevo-temazcal * (huedistance1) * sat) >> video <> 10;
+
+----- 5
+##iixkopinomej
+
+n << step [0,1,2,3,4,5] $ lfsaw [(cps/9)*1.5];
+zoom 0.5 $ ((n==0)*familia1)+:((n==1)*familia2)+:((n==2)*familia3)+:((n==3)*familia4)+:((n==4)*familia5)+:((n==5)*familia6)+:((n==6)*familia7) >> video <> 10;
+(hline (fft fx) (ebeat*0.0001)) >> video;
+
+----- 6
+##iixkopinomej
+
+hline (fft fx) 0.001 >> video;
+0.8 >> fdbk;
+
+----- 7,8
+##iixkopinomej
+
+n << step [0,1,2,3] $ lfsaw [cps/4];
+laTeoria << ((n==0)*teoria_)+:((n==1)*de_las)+:((n==2)*constelaciones)+:((n==3)*circumpolares);
+move [((-0.2)~~0.2 $ saw 0.011), ((-0.2)~~0.2 $ saw 0.013)] $ zoom (tile (etime*0.05) (ebeat*0.05)) $ laTeoria * 0.13 * (1+(fract beat * (-1))) >> video;
+
+sp << step [0,0.25,0.5,0.75,1,1.25,1.5,1.75] $ lfsaw (cps/(ebeat*8));
+move [(0~~0.1 $ sin 0.1),-2.5] $ zoom (3) $ spin sp $ vi_ * laTeoria >> video <> 10;
+move [(0~~0.1 $ sin 0.1),-2.5] $ zoom (3) $ spin sp $ vii_ * laTeoria>> video <> 10;
+move [(0~~0.1 $ sin 0.1),-2.5] $ zoom (3) $ spin sp $ viii_ * laTeoria>> video <> 10;
+0.8 >> fdbk;
+
+
+----- 9 (nada)
+
+----- 10
+##iixkopinomej
+
+lpf (2666~~6666 $ saw 0.05) 1 $ lpf (20~~6666 $ sqr (2.5/32)) 1 $ rnd *(-25)db >> audio <> 15;
+x << 1 + ((fft fx)*0.2);
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ i_ *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ ii_ *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ iii_ *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ iv_ *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ v_ *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ vi_ *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ vii_ *0.1>> video <> 10;
+move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ viii_ *0.1>> video <> 10;
+spin (saw 0.01) $ ozomatli * (0.2) >> video <> 10;
+spin (saw 0.01*(-1)) $ octante * (0.2) >> video <> 10;
+0.91 * ((mid*2.2)*(ebeat > 20)) >> fdbk
+
+----- 11
+##iixkopinomej
+
+0 >> audio <> 20;
+n << step [0,1,2,3,4,5] $ lfsaw [cps/6];
+
+zoom (0.5+(ebeat*0.05)) $ spin ((1/ebeat) + (etime*0.05)) $ tile [4,4] $ ((n==0)*f1_)+:((n==1)*f2_)+:((n==2)*f3_)+:((n==3)*f4_)+:((n==4)*f5_)+:((n==5)*f6_) >> video <> 10;
+
+(1/ebeat)*0.125 >> fdbk <> 10;
+
+
+----- 12
+##iixkopinomej
+
+0 >> audio <> 15;
+x <<  tile [fract ebeat,0] $ (sin fx * 0.05);
+y <<  tile (fft fy*2) $ tile [0,etime] $ (sin fy * 0.055) ;
+huedistance1 << (1 - abs (rgbh plantas - 0.33)) ** 2; 
+huedistance2 << (1 - abs (rgbh plantas - (sin 0.05))) ** 2;
+sat << rgbs plantas * 8;
+move [x, y] $ prox 0 **4 * (plantas * (huedistance1 + huedistance2) * sat) >> video <> 10;
+
+----- 13
+##iixkopinomej
+
+lpf (100~~2666 $ sin [0.1,0.15,0.21]) 1 $ saw (midicps [45,45.01, 53,52.98, 62,62.05, 65,65.07]) *(-30)db >> audio <> 15;
+sin (midicps [38.01,26]) *(-24)db >> audio;
+delay 2 [0.5,0.6,0.1,0.2,0.7,1.3] $ audioin >> audio <> 10;
+
+x <<  tile fxy $ (tri fy*0.0005*ebeat)*(1 + (0.001*ebeat));
+move [0.2, (-0.3)] $ zoom (2) $ move x $ antes_de_dormir * (1/(ebeat*0.05)) >> video
+

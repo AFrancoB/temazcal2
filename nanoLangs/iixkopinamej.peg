@@ -1,26 +1,63 @@
 ##JSoLang iixkopinomej
 
 main = x:allRules* { return "##Punctual\n" + x.join("") }
-allRules = r1 / r2 / r3 / r4 / r5 / r6 / r7 / r8 / r9 / r10 / anyCharacter
+allRules =  r34 / r33 / r32 / r31 / r30 / r29 / r28 / r27 / r26 / r25 / r24 / r23 / r22 / r21 / r20 / r19 / r18 / r17 / r16 / r15 / r14 / r13 / r12 / r11 / r10 / r9 / r8 / r7 / r6 / r5 / r4 / r3 / r2 / r1 / anyCharacter
 anyCharacter = .
 
 r1 = "retratos"i { return "img \"https://afrancob.github.io/temazcal2/Momento-2/retrato-6.jpg\"" }
-r2 = "ome"i { return "img \"https://afrancob.github.io/temazcal2/Momento-2/retrato-6.jpg\"" }
+
+r2 = "ome"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/ii.svg\"" }
 
 r3 = "antiguo-temazcal"i { return "img \"https://afrancob.github.io/temazcal2/Momento-3/antiguo-temazcal.jpg\""}
 
-r4 = "iv"i { return "\"https://afrancob.github.io/temazcal2/script-afb/iv.svg\"" }
+r4 = "iv_"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/iv.svg\"" }
 
-r5 = "nuevo-temazcal"i { return "img \"https://afrancob.github.io/temazcal2/Momento-4/construccion-2.jpeg\""}
+r5 = "nuevo-temazcal"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-4/construccion-2.jpeg\")"}
 
-r6 = "teoria"i { return "img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-1.jpg\""}
+r6 =  "familia1"i {return "img \"la imagen va aqui\""}
+r7 =  "familia2"i { return ""}
+r8 =  "familia3"i { return ""}
+r9 =  "familia4"i { return ""}
+r10 = "familia5"i { return ""}
+r11 = "familia6"i { return ""}
+r12 = "familia7"i { return ""}
 
-r7 = "deLas"i { return "img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-3.jpg\""}
+r13 = "teoria_"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-1.jpg\")"}
 
-r8 = "constelaciones"i { return "img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-4.jpg\""}
+r14 = "de_las"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-3.jpg\")"}
 
-r9 = "circumpolares"i { return "img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-5.jpg\""}
+r15 = "constelaciones"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-4.jpg\")"}
 
-r10 = "percusores"i { return "x << 1 + (lo*0.05); move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img (\"https://afrancob.github.io/temazcal2/script-afb/i.svg\") *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/ii.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/iii.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/iv.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/v.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/vi.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/vii.svg\" *0.1>> video <> 10; move [-0.25,-3.3] $ zoom (4.25*x) $ spin (saw 0.002) $ img \"https://afrancob.github.io/temazcal2/script-afb/viii.svg\" *0.1>> video <> 10; spin (saw 0.01) $ img \"https://afrancob.github.io/temazcal2/script-afb/ozomatli.svg\" * (0.2) >> video <> 10; spin (saw 0.01*(-1)) $ img \"https://afrancob.github.io/temazcal2/script-afb/octante.svg\" * (0.2) >> video <> 10; 0.93 >> fdbk"}
+r16 = "circumpolares"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-10/teoria_rhg/teoria-5.jpg\")"}
 
+r17 = "vi_"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/vi.svg\""}
+
+r18 = "vii_"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/vii.svg\""}
+
+r19 = "viii_"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/viii.svg\""}
+
+r20 = "i_"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/i.svg\""}
+
+r21 = "ii_"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/ii.svg\""}
+
+r22 = "iii_"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/iii.svg\""}
+
+r23 = "v_"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/v.svg\""}
+
+r24 = "ozomatli"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/ozomatli.svg\""}
+
+r25 = "octante"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/octante.svg\""}
+
+r26 = "los_percusores_reverberan_con_las_estrellas"i { return ""}
+
+r27 = "f1_"i { return "img  \"https://afrancob.github.io/temazcal2/Momento-11/foto-6.jpg\""}
+r28 = "f2_"i { return "img  \"https://afrancob.github.io/temazcal2/Momento-11/foto-1.jpg\""}
+r29 = "f3_"i { return "img  \"https://afrancob.github.io/temazcal2/Momento-11/foto-2.jpg\""}
+r30 = "f4_"i { return "img  \"https://afrancob.github.io/temazcal2/Momento-11/foto-3.jpg\""}
+r31 = "f5_"i { return "img  \"https://afrancob.github.io/temazcal2/Momento-11/foto-4.jpg\""}
+r32 = "f6_"i { return "img  \"https://afrancob.github.io/temazcal2/Momento-11/foto-5.jpg\""}
+
+r33 = "plantas"i { return "(vid \"https://afrancob.github.io/temazcal2/Momento-12/hierbas-1.mov\")"}
+
+r34 = "antes_de_dormir"i { return "(vid \"https://afrancob.github.io/temazcal2/Momento-13/fin.mov\")"}
 
