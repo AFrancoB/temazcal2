@@ -22,7 +22,44 @@ grid 2 2
 grid 2 2 []
 
 ###### vista publica 4, donde las vistas de diego, alejandro y rolando se muestran
-
+grid 3 1 [
+    grid 2 3 
+[
+    [code 2 0],
+    [code 0 0],
+	cols [snippet 0 False "tlaiixkopioolin" "ce",snippet 0 False "tlaiixkopioolin" "ome",snippet 0 False "tlaiixkopioolin" "yei",snippet 0 False "tlaiixkopioolin" "nahui",snippet 0 False "tlaiixkopioolin" "macuilli",snippet 0 False "tlaiixkopioolin" "chicoace",snippet 0 False "tlaiixkopioolin" "chicome",snippet 0 False "tlaiixkopioolin" "chicyei",snippet 0 False "tlaiixkopioolin" "chicnahui",snippet 0 False "tlaiixkopioolin" "matlactli",snippet 0 False "tlaiixkopioolin" "matlactli-huan-ce",snippet 0 False "tlaiixkopioolin" "matlactli-huan-ome",snippet 0 False "tlaiixkopioolin" "matlactli-huan-yei"],
+    [code 4 0],
+	[load 0, load 1]
+]  ,
+    grid 2 1 [
+    [code 6 0],
+    [[code 8 0],
+        rows [timeVision 222,sandClock 666]]
+],
+    grid 2 2 [[code 14 0],
+cols [cols [
+    snippet 14 False "pohualkakilistli" "rolando1",
+    snippet 14 False "pohualkakilistli" "flor1",
+    snippet 14 False "pohualkakilistli" "rita1",
+    snippet 14 False "pohualkakilistli" "clara1",
+    snippet 14 False "pohualkakilistli" "flor3",
+    snippet 14 False "pohualkakilistli" "rita2",
+    snippet 14 False "pohualkakilistli" "flor2",
+    snippet 14 False "pohualkakilistli" "clara3",
+    snippet 14 False "pohualkakilistli" "flor4",
+    snippet 14 False "pohualkakilistli" "clara4",
+    snippet 14 False "pohualkakilistli" "flor5",
+    snippet 14 False "pohualkakilistli" "tino1",
+    snippet 14 False "pohualkakilistli" "clara2",
+    snippet 14 False "pohualkakilistli" "rolando4",
+    snippet 14 False "pohualkakilistli" "rolando2",
+    snippet 14 False "pohualkakilistli" "rolando3",
+    snippet 14 False "pohualkakilistli" "flor6",
+    snippet 14 False "pohualkakilistli" "flor7",
+    snippet 14 False "pohualkakilistli" "clara5",
+    snippet 14 False "pohualkakilistli" "ramon2"],
+    [stopwatch 2666],[timeVision 222]],[code 12 0],[code 16 0]]
+]
 
 
 
@@ -48,35 +85,29 @@ grid 2 1 [
 
 ########### Alex
 
-grid 2 2
-[
-    [code 14 0],
-	cols [
-        snippet 14 False "pohualkakilistli" "rolando1",
-        snippet 14 False "pohualkakilistli" "flor1",
-        snippet 14 False "pohualkakilistli" "rita1",
-        snippet 14 False "pohualkakilistli" "clara1",
-        snippet 14 False "pohualkakilistli" "flor3",
-        snippet 14 False "pohualkakilistli" "rita2",
-        snippet 14 False "pohualkakilistli" "flor2",
-        snippet 14 False "pohualkakilistli" "clara3",
-        snippet 14 False "pohualkakilistli" "flor4",
-        snippet 14 False "pohualkakilistli" "clara4",
-        snippet 14 False "pohualkakilistli" "flor5",
-        snippet 14 False "pohualkakilistli" "tino1",
-        snippet 14 False "pohualkakilistli" "clara2",
-        snippet 14 False "pohualkakilistli" "rolando4",
-        snippet 14 False "pohualkakilistli" "rolando2",
-        snippet 14 False "pohualkakilistli" "rolando3",
-        snippet 14 False "pohualkakilistli" "flor6",
-        snippet 14 False "pohualkakilistli" "flor7",
-        snippet 14 False "pohualkakilistli" "clara5",
-        snippet 14 False "pohualkakilistli" "ramon2"],
-    [code 12 0],
-    [code 16 0],
-    [stopwatch 2666],
-    [timeVision 222]
-]
+grid 2 2 [[code 14 0],
+cols [cols [
+    snippet 14 False "pohualkakilistli" "rolando1",
+    snippet 14 False "pohualkakilistli" "flor1",
+    snippet 14 False "pohualkakilistli" "rita1",
+    snippet 14 False "pohualkakilistli" "clara1",
+    snippet 14 False "pohualkakilistli" "flor3",
+    snippet 14 False "pohualkakilistli" "rita2",
+    snippet 14 False "pohualkakilistli" "flor2",
+    snippet 14 False "pohualkakilistli" "clara3",
+    snippet 14 False "pohualkakilistli" "flor4",
+    snippet 14 False "pohualkakilistli" "clara4",
+    snippet 14 False "pohualkakilistli" "flor5",
+    snippet 14 False "pohualkakilistli" "tino1",
+    snippet 14 False "pohualkakilistli" "clara2",
+    snippet 14 False "pohualkakilistli" "rolando4",
+    snippet 14 False "pohualkakilistli" "rolando2",
+    snippet 14 False "pohualkakilistli" "rolando3",
+    snippet 14 False "pohualkakilistli" "flor6",
+    snippet 14 False "pohualkakilistli" "flor7",
+    snippet 14 False "pohualkakilistli" "clara5",
+    snippet 14 False "pohualkakilistli" "ramon2"],
+    [stopwatch 2666],[timeVision 222]],[code 12 0],[code 16 0]]
 
 
 ### view to alter langs
