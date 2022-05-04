@@ -14,11 +14,11 @@ r4 = "iv_"i { return "img \"https://afrancob.github.io/temazcal2/script-afb/iv.s
 
 r5 = "nuevo-temazcal"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-4/construccion-2.jpeg\")"}
 
-r6 =  "familia1"i {return "img \"la imagen va aqui\""}
-r7 =  "familia2"i { return ""}
-r8 =  "familia3"i { return ""}
-r9 =  "familia4"i { return ""}
-r10 = "familia5"i { return ""}
+r6 =  "clara"i {return "(img \"https://afrancob.github.io/temazcal2/Momento-5/clara.png\")"}
+r7 =  "flor"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-5/flor.png\")"}
+r8 =  "ramon"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-5/ramon.png\")"}
+r9 =  "olaf"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-5/olaf.jpeg\")"}
+r10 = "tino"i { return "(img \"https://afrancob.github.io/temazcal2/Momento-5/tino.png\")"}
 r11 = "familia6"i { return ""}
 r12 = "familia7"i { return ""}
 

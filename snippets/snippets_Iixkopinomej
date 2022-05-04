@@ -48,9 +48,9 @@ zoom (ebeat/32) $ move [x-0.1, y-0.1] $ (prox [0,(-0.1)])**8 * (nuevo-temazcal *
 ----- 5
 ##iixkopinomej
 
-n << step [0,1,2,3,4,5] $ lfsaw [(cps/9)*1.5];
-zoom 0.5 $ ((n==0)*familia1)+:((n==1)*familia2)+:((n==2)*familia3)+:((n==3)*familia4)+:((n==4)*familia5)+:((n==5)*familia6)+:((n==6)*familia7) >> video <> 10;
 (hline (fft fx) (ebeat*0.0001)) >> video;
+n << step [0,1,2,3,4,5] $ lfsaw [(cps/9)*1.5];
+zoom 0.5 $ fit [1159/654] $ ((n==0)*clara)+:((n==1)*flor)+:((n==2)*ramon)+:((n==3)*olaf)+:((n==4)*tino) >> video <> 10;
 
 ----- 6
 ##iixkopinomej
