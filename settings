@@ -11,44 +11,8 @@ settings:
 -- cambio de tempo en escena 13: !setbpm 100
 
 
-
-
--- todos deben de ver stopwatch 2666
-
---Rolando 1 (dos cajas de tlaiixkopioolin (0 1, 2 3, 4 5) y una caja de timenot publicas, una caja con botones tlaii..., una caja con botones timenot, una caja con el stopwatch 2666 y sandclock 50)
-grid 2 3 
-[
-	[code 0 0],
-	[[snippet 0 "tlaiixkopioolin" "ce"],[snippet 0 "tlaiixkopioolin" "ome"],[snippet 0 "tlaiixkopioolin" "yei"],[snippet 0 "tlaiixkopioolin" "nahui"],[snippet 0 "tlaiixkopioolin" "macuilli"],[snippet 0 "tlaiixkopioolin" "chicoace"],[snippet 0 "tlaiixkopioolin" "chicome"][snippet 0 "tlaiixkopioolin" "chicyei"],[snippet 0 "tlaiixkopioolin" "chicnahui"],[snippet 0 "tlaiixkopioolin" "matlaclti"],[snippet 0 "matlactli huan ce" "||."],[snippet 0 "tlaiixkopioolin" "matlactli huan ome"],[snippet 0 "tlaiixkopioolin" "matlactli huan yei"]],
-	[code 2 0],
-	[[snippet 2 "pohualkakilistli" "ce"],[snippet 2 "tlaiixkopioolin" "ome"],[snippet 2 "tlaiixkopioolin" "yei"],[snippet 2 "tlaiixkopioolin" "nahui"],[snippet 2 "tlaiixkopioolin" "macuilli"],[snippet 2 "tlaiixkopioolin" "chicoace"],[snippet 2 "tlaiixkopioolin" "chicome"][snippet 0 "tlaiixkopioolin" "chicyei"],[snippet 0 "tlaiixkopioolin" "chicnahui"],[snippet 2 "tlaiixkopioolin" "matlaclti"],[snippet 0 "matlactli huan ce" "||."],[snippet 0 "tlaiixkopioolin" "matlactli huan ome"],[snippet 2 "tlaiixkopioolin" "matlactli huan yei"]],
-	
-	
-	[sandClock 50,stopwatch 2666]
-] 
-
-
--- performer 2
-grid 2 2 [[label 30,code 31 0],[label 32,code 33],[label 34,code 35 0],[sandClock 36,countDown 37,stopwatch 2666]] 
--- performer 3
-grid 2 2 [[label 40,code 41 0],[label 42,code 43],[label 44,code 45 0],[sandClock 46,countDown 47,stopwatch 2666]] 
-
-
--- vista publica 1
-grid 3 3 [[code 0],[code 6],[code 12],[code 2], [code 8], [code 14], [code 4], [code 10], [code 16]]
-
-
-
-
-zones: 100 - 111 son labels (pares) y cajas de codigo (nones). Aqui se reprograman los nanolenguajes 
- - 101 ##kakilistli  (pirataidal para diego)
- - 103 ##iixkopinomej (pucntual con vairables)
- - 105 ##tlaiixkopioolin (todos los movimientos de cineCer0 y videos cargados)
-
-
-modify nano-langs:
-grid 6 1 [[label 100,code 101 0],[label 102,code 103 0],[label 104,code 105 0],[label 106,code 107 0],[label 108,code 109 0],[label 110,code 111 0]]
-
+punctual audio input:
+-- webdirt to punctual and output
 
 
 

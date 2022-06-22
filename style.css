@@ -1,0 +1,190 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  font-family: 'monoidnormal', Courier, Arial, Helvetica, sans-serif;
+  background-color: black;
+  position: relative;
+  min-height: 100%;
+}
+h1 {
+  font-size: larger;
+  text-align: left;
+}
+h2 {
+  font-size: 100%;
+  text-align: justify;
+}
+h3 {
+font-size: 80%;
+color: white;
+
+}
+.back-image {
+  background-image: url("flyer.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px) brightness(50%);
+}
+
+.home {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container-menu {
+    flex: auto;
+    flex-direction: column;
+    background-color: black;
+    filter: opacity(50%);
+    width: 10%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.container-menu:hover{
+    background-color: black;
+    filter: opacity(100%);
+  }
+
+.menu-item {
+    flex: none;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    margin: 5% 5px;
+}
+
+.temazcal-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo {
+    position: absolute;
+    display:block;
+    color: white;
+    border: 1px solid #cccccc;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    text-align: center;
+}
+
+.subtitulo {
+    position: absolute;
+    display:block;
+    color: white;
+    border: 1px solid #cccccc;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.footer {
+  color: #eeeeee;
+  position: absolute;
+  border: 1px solid #cccccc;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1%;
+  text-align: right; 
+  background-color:black;
+  filter: opacity(50%);
+  padding-right: 5%;
+}
+
+.header {
+  color: #eeeeee;
+  position: absolute;
+  border: 0px solid #cccccc;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 10%;
+  padding: 1%;
+}
+
+.header h1
+{
+display:block;
+color:#FFFFFF;
+text-align:center;
+font-size: 100%;
+padding-right: 1%;
+padding-left: 1%;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+
+.header ul {
+	padding-left: 5%;
+	list-style-type:none;
+	height:1%;
+	height:85px;
+	overflow:hidden;
+  background-color: black;
+  filter: opacity(50%);
+}
+
+.header ul li , .header ul li a, .header ul li a:visited{
+	display:block;
+	float:left;
+	margin: 0px;
+	text-align:center;
+	line-height:350%;
+	width:20%;
+	color:#FFFFFF;
+	font-size:100%;
+}
+
+.header ul li a:hover{
+  font-size: larger;
+}
+
+.header ul:hover{
+  background-color: black;
+  filter: opacity(100%);
+}
+
+@font-face {
+  font-family: 'monoidnormal';
+  src: url('assets/fonts/monoid-a0-a1-a3-al-ad-aa-webfont.woff2') format('woff2'),
+       url('assets/fonts/monoid-a0-a1-a3-al-ad-aa-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* unvisited link */
+a:link {
+  color: #ccc;
+}
+/* visited link */
+a:visited {
+  color: #c8eaff;
+}
+/* mouse over link */
+a:hover {
+  color: #e3cbf1;
+  font-size: larger;
+}
+/* selected link */
+a:active {
+  color: #800000;
+}
