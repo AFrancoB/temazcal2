@@ -92,6 +92,18 @@ color: white;
     text-align: center;
 }
 
+.subtitle {
+  position: absolute;
+  display:block;
+  color: white;
+  border: 1px solid #cccccc;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  text-align: center;
+}
+
 
 .footer {
   color: #eeeeee;
