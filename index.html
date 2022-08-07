@@ -10,7 +10,7 @@
     <div class="header">
         <div class="container-menu">
             <div class="menu-item">UHM Archive</div>
-            <div class="menu-item"><a href="indice.html">momento-1</a></div>
+            <div class="menu-item"><a href="Momento-1/momento1.html">momento-1</a></div>
             <div class="menu-item"><a href="indice.html">momento-2</a></div>
             <div class="menu-item"><a href="indice.html">momento-3</a></div>
             <div class="menu-item"><a href="indice.html">momento-4</a></div>
@@ -34,8 +34,25 @@
         </div>
     </div>
      <div class="titulo">temazcal 2</div>
-     <div class="subtitulo">segundo <a href="videos">documental</a> al vuelo</div>
-     <div class="subtitle">second on-the-fly <a href="videos">documentary</a></div>
+     <div class="subtitulo">ver segundo <a href="docu.html">documental</a> al vuelo</div>
+     <div class="subtitle">watch second on-the-fly <a href="docu.html">documentary</a></div>
     </div>
+
+    <div class="popup" onclick="myFunction()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="80" height="80">
+        <path fill="none" style="opacity:0.5" stroke="white" stroke-width="36" stroke-linecap="round" d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"/>
+        </svg>
+      
+      <div class="apopup" id="myPopup"><span class="popuptext">Temazcal 2 is an on-the-fly documentary: it has to be performed live to exist. However, we have recorded documentation of its performance. The versions here were recorded in multiple locations and with different devices on the 6th of May, 2022: to the right you can see the recorded available versions of the documentary. The documentary also exists as an archive in the hope that the material can be better understood interactively by the ongoing audience of the documentary: to the left you can navigate the material and see some options to interact with it. All of the material is free and open source; it can be used by anyone to generate their own artworks.</span></div>
+    </div>
+    
+    <script>
+    // When the user clicks on div, open the popup«
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+      
   </body>
 </html>
